@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// Import all of Bootstrap's CSS
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  letter-spacing: 1.3px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+.App{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+}
+.container{
+  margin-bottom: 50px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.card{
+  width: 465px;
+  height: 465px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  transition: .3s;
+  font-size: 15px;
+  display: block;
+  padding: 1em;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+  color: aliceblue;
+}
+.card2{
+  width: 465px;
+  height: 465px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  transition: .3s;
+  font-size: 20px;
+  display: block;
+  padding: 7em;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+  color: aliceblue;
+  
+}
+.card:hover{
+  transform: scale(1.1);
+}
+
+body {
+ margin: 0;
+ min-width: 320px;
+ min-height: 100vh;
+}
+.dark {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+    .footer {
+      color:black;
+    }
+    .yazi { 
+      text-align: center; 
+      background-color:rgba(0, 0, 0, 0.70)
+    }
+}
+.image {
+  width: 25px;
+  position: fixed;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+  justify-content: right;
+  align-items: right;
+  position: absolute;
+}
+.cardheader{
+  width: 100%;
+
+}
+
+svg{
+  right: 20px;
+  top: 20px;
+}
+.light {
+  background-color: rgba(255, 255, 255, 0.87);
+  color: #242424;
+  .yazi { 
+    text-align: center; 
+    background-color:rgba(255, 255, 255, 0.60)
+  }
+
+}
+.footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+background-color: gray;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Antic Slab', serif;
+  height: 45px;
+  padding: 10px;
+}
+
+.navbar {
+  display: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5em;
+  background-color: rgba(17, 24, 39, 1);
+  color: aliceblue;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 18px;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.centerimg{
+  margin: auto;
+  padding: auto;
+}
+
+.yazicontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 80%;
+  margin: auto;
+  padding: auto;
+}
+@media screen and (max-width: 600px) {
+  .yazicontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 53%;
+    padding-bottom: 20%;
+  }
+  
+}
